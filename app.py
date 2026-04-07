@@ -87,7 +87,7 @@ def log_access(name, email):
 # ACCESS CONTROL
 # ----------------------------
 def check_access():
-    expected_password = str(st.secrets.get("ACCESS_CODE", "CantaBio2026")).strip()
+    expected_password = str(st.secrets.get("ACCESS_CODE", "SMR2026")).strip()
 
     if "authenticated" not in st.session_state:
         st.session_state.authenticated = False
